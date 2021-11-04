@@ -1,0 +1,41 @@
+{
+  "name": "root",
+  "version": "1.0.0",
+  "private": "true",
+  "description": "🚗 quick build monorepo project for your self",
+  "scripts": {
+    "prepare": "husky install",
+    "website": "pnpm run dev --filter app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edisonLzy/em-template-lerna.git"
+  },
+  "author": "evanzyli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edisonLzy/em-template-lerna/issues"
+  },
+  "homepage": "https://github.com/edisonLzy/em-template-lerna#readme",
+  "dependencies": {
+    "@babel/eslint-parser": "^7.16.0",
+    "@commitlint/config-conventional": "^13.2.0",
+    "@typescript-eslint/eslint-plugin": "^5.2.0",
+    "@typescript-eslint/parser": "^5.2.0",
+    "commitlint": "^13.2.1",
+    "eslint": "^8.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^11.2.6",
+    "prettier": "^2.4.1"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix"
+    ],
+    "*.{d.ts,json,md}": [
+      "prettier --write"
+    ]
+  }
+}
