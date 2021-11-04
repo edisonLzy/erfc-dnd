@@ -1,3 +1,3 @@
-# em-template-monorepo
+# erfc-dnd
 
-- 🚗 quick build monorepo project for your self
+mini react-dnd
